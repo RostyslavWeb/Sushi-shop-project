@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Sushi</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
+		rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
+			<div class="display-4">Sushi Shop</div>
+			<p class="lead">Fast and tasty</p>
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row" id="products-container">
+				</div>
+			</div>
+			<div class="col-md-4">
+
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Your order</h4>
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+								Basket is empty
+							</div>
+
+							<div class="cart-wrapper"></div>
+
+							<div class="cart-total">
+								<p data-cart-delivery class="none">
+									<span class="h5">Delivery:</span>
+									<span class="delivery-cost">free</span><br>
+									<span class="small">Free delivery for orders more than 60$</span>
+								</p>
+								<p>
+									<span class="h5">Total:</span>
+									<span class="total-price">0</span>
+									<span class="rouble">$</span>
+								</p>
+							</div>
+
+					</div>
+
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Make an order</h4>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Phone number">
+								</div>
+								<button type="submit" class="btn btn-primary">Checkout</button>
+							</form>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+</html>
